@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally to Rumble | Official</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo" data-target="home">RALLY TO <span class="text-yellow">RUMBLE</span></div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active" data-target="home">Home & About</a></li>
+            <li><a href="#" class="nav-item" data-target="events">Events</a></li>
+            <li><a href="#" class="nav-item" data-target="tickets">Tickets</a></li>
+            <li><a href="#" class="nav-item" data-target="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+
+        <section id="home" class="page-section active">
+            <div class="hero-header">
+                <h1 class="main-title">RALLY TO<br><span class="text-yellow">RUMBLE</span></h1>
+                <p class="subtitle">Rally's voor de échte autoliefhebber. Geen show, pure adrenaline.</p>
+            </div>
+
+            <div class="racestrepen"></div>
+
+            <div class="about-box">
+                <h2>ABOUT US</h2>
+                <p>Bij <strong>Rally to Rumble</strong> geloven we dat auto's gemaakt zijn om mee te rijden, niet om in een garage te stoffen. Wij organiseren exclusieve en uitdagende rally's voor petrolheads die houden van ronkende motoren, adembenemende
+                    routes en een hechte community.</p>
+            </div>
+        </section>
+
+        <section id="events" class="page-section">
+            <h1 class="main-title">EVENTS</h1>
+            <div class="event-featured">
+                <div class="event-badge">EERSTVOLGEND</div>
+                <h2>THE GRAPEVINE RALLY</h2>
+                <p class="event-date">Maart 2026 | Issue 3</p>
+                <p>Een epische tocht door kronkelende wijnvelden, strak asfalt en uitdagende haarspeldbochten. Dit is hét evenement waar je bij moet zijn.</p>
+                <button class="btn btn-yellow nav-trigger" data-target="tickets">Claim Je Spot</button>
+            </div>
+        </section>
+
+        <section id="tickets" class="page-section">
+            <h1 class="main-title">TICKETS</h1>
+            <p class="subtitle-ticket">Beperkte plekken beschikbaar voor de Grapevine Rally.</p>
+
+            <div class="ticket-grid">
+                <div class="ticket-card">
+                    <h3>DRIVERS PASS</h3>
+                    <p class="price">€249</p>
+                    <ul>
+                        <li>Toegang voor 1 auto & bestuurder</li>
+                        <li>Officiële roadbook & gadgetpack</li>
+                        <li>Lunch & BBQ aan de finish</li>
+                    </ul>
+                    <button class="btn btn-dark" onclick="alert('In winkelwagen!')">Koop Ticket</button>
+                </div>
+                <div class="ticket-card co-pilot">
+                    <div class="card-badge">POPULAIR</div>
+                    <h3>TEAM PASS</h3>
+                    <p class="price">€379</p>
+                    <ul>
+                        <li>Toegang voor 1 auto, bestuurder & bijrijder</li>
+                        <li>2x Officiële roadbook & gadgetpack</li>
+                        <li>Lunch & BBQ voor beide personen</li>
+                    </ul>
+                    <button class="btn btn-yellow" onclick="alert('In winkelwagen!')">Koop Ticket</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="contact-wrapper">
+                <h1 class="main-title text-center">CONTACT</h1>
+                <p class="subtitle text-center">Vragen over de keuring, starttijden of sponsoring? Rumble met ons.</p>
+
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Bericht verzonden! We nemen snel contact op.');">
+                    <div class="form-group">
+                        <label>Naam</label>
+                        <input type="text" required placeholder="Je naam">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" required placeholder="naam@voorbeeld.nl">
+                    </div>
+                    <div class="form-group">
+                        <label>Bericht</label>
+                        <textarea rows="5" required placeholder="Wat wil je weten?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-yellow btn-block">Verstuur Bericht</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 RALLY TO RUMBLE | Volume 10</p>
+        <div class="barcode">|||| | ||||| | || |||| |</div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
